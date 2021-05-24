@@ -1,0 +1,207 @@
+@import "fonts";
+@import "vars";
+@import "global";
+
+.section-top {
+    background-image: url("../images/header-bg.jpg");
+    background-size: cover;
+    min-height: 708px;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+    }
+}
+
+.header {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding-top: 20px;
+    align-items: center;
+
+    &__contacts {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 380px;
+    }
+
+    &__contacts-phone {
+        @extend %Georgia;
+        font-size: 24px;
+        line-height: 27px;
+        color: #fff;
+    }
+
+    &__menu-burger {
+        position: relative;
+        width: 30px;
+        height: 28px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+
+    &__menu-burger span,
+    &__menu-burger::after,
+    &__menu-burger::before {
+        height: 6px;
+        width: 100%;
+        background: #fff;
+        margin: 0 auto;
+    }
+
+    &__menu-burger::after,
+    &__menu-burger::before {
+        content: "";
+    }
+}
+
+.main-title {
+    font-size: 36px;
+    line-height: 54px;
+    color: #fff;
+    max-width: 800px;
+    text-transform: uppercase;
+    @extend %GoudyTrajan-Regular;
+    margin-top: 84px;
+
+    & > span {
+        @extend %GoudyTrajan-Medium;
+        color: #fbd587;
+    }
+}
+
+.section-top-btn-box {
+    margin-top: 80px;
+}
+
+.btn-accent,
+.btn-additional {
+    width: 347px;
+    height: 81px;
+    border-radius: 70px;
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+    border-radius: 70px;
+    padding: 30px 90px 30px 43px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.btn-accent {
+    background: linear-gradient(180deg, #fde6b4 0%, #ffc858 99.99%, #fbd587 100%, #ffae1c 100%);
+    box-shadow: 4px 4px 20px 5px rgba(255, 174, 28, 0.4), 3px 3px 0 0 #fab223;
+    position: relative;
+
+    &:hover {
+        background: linear-gradient(180deg, #ffd67d 0%, #ffa603 99.99%, #fbd587 100%, #c69d52 100%);
+    }
+}
+
+.btn-additional {
+    padding: 30px 115px 30px 69px;
+    margin-left: 30px;
+    background: linear-gradient(180deg, #03d7f7 0%, #00a0c4 100%);
+    box-shadow: 4px 4px 20px 5px #007b96, 3px 3px 0 0 #007c97;
+
+    &:hover {
+        background: linear-gradient(180deg, #6decff 0%, #2e9eb8 100%);
+    }
+}
+
+.characteristics__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.characteristics__item {
+    color: #fff;
+    font-size: 14px;
+    line-height: 21px;
+    @extend %Montserat-Redular;
+    background: rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(73, 73, 73, 0.75);
+    border-radius: 250px;
+    min-width: 350px;
+    min-height: 80px;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 105px;
+
+    &-text {
+        max-width: 120px;
+        text-align: center;
+        margin-top: 20px;
+        margin-right: 38px;
+        margin-left: auto;
+    }
+
+    &-img {
+        max-width: 150px;
+        border-radius: 250px 250px 0px 250px;
+        position: absolute;
+    }
+
+    &-text span {
+        @extend %Montserat-Bold;
+    }
+}
+
+.characteristics__item:nth-child(2) {
+    .characteristics__item-img {
+        max-width: 137px;
+    }
+}
+
+.section-project {
+    margin-top: 100px;
+}
+
+.page__section {
+    &-title {
+        @extend %GoudyTrajan-Medium;
+        font-size: 36px;
+        line-height: 39px;
+        text-transform: uppercase;
+    }
+
+    &-text {
+        margin-top: 40px;
+        @extend %Montserat-Redular;
+        font-size: 18px;
+        line-height: 22px;
+        max-width: 906px;
+    }
+}
+
+.slider-box {
+    margin-top: 60px;
+}
+
+.slider-btn-right,
+.slider-btn-left {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    position: absolute;
+    right: -70px;
+    top: 50%;
+}
+
+.slider-btn-left {
+    position: absolute;
+    left: -70px;
+    top: 50%;
+}

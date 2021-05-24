@@ -1,0 +1,21 @@
+@font-face {
+     font-family: "Georgia";
+     src: url("../fonts/Georgia.woff") format("woff"),
+          url("../fonts/Georgia.woff2") format("woff2");
+     font-style: normal;
+}
+
+@font-face {
+     font-family: "GoudyTrajan-Regular";
+     src: url("../fonts/GoudyTrajan-Regular.woff") format("woff"),
+          url("../fonts/GoudyTrajan-Regular.woff2") format("woff2");
+     font-style: normal;
+     font-weight: 500;
+}
+@font-face {
+     font-family: "GoudyTrajan-Medium";
+     src: url("../fonts/GoudyTrajan-Medium.woff2") format("woff2"),
+          url("../fonts/GoudyTrajan-Medium.woff") format("woff");
+     font-style: normal;
+     font-weight: 700;
+}
