@@ -324,7 +324,7 @@
     line-height: 17px;
     color: #fff;
     padding: 43px;
-    
+
     &-title {
         font-size: 24px;
         @extend %Montserat-Redular;
@@ -341,3 +341,67 @@
 .apartmens__list-item {
     background-color: hotpink;
 }
+
+.input-floor {
+    max-width: 69px;
+    background-color: transparent;
+    padding: 5px 20px 5px 20px;
+    // margin: 0;
+    border: 1px solid #c4c4c4;
+    border-bottom: none;
+    // border: 1px solid #C4C4C4;
+    color: #fff;
+    // font-size: 14px;
+    // line-height: 17px;
+    text-align: center;
+}
+.inpute-wrapper {
+    max-width: 140px;
+    // margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.noUi-handle {
+    background: url("../images/slider-handle.png");
+    height: 16px;
+    width: 8px;
+    border: none;
+    border-radius: none;
+    box-shadow: none;
+
+    &::after,
+    &::before {
+        display: none;
+    }
+}
+.noUi-horizontal .noUi-handle {
+    width: 8px;
+    height: 16px;
+    right: -5px;
+    top: -6px;
+}
+.noUi-base {
+    background: #fff;
+    height: 3px;
+    width: 139px;
+}
+// .noUi-target{
+//     height: 2px;
+//     // borde    r: 1px solid red;
+// }
+.noUi-target {
+    background: none;
+    border-radius: none;
+    border: none;
+    box-shadow: none;
+    width: 140px;
+}
+.noUi-connects {
+    height: 4px;
+}
+.noUi-connect {
+    // height: 2px;
+    background: #ffae1c;
+}
+// .noUi-origin{
+// }
