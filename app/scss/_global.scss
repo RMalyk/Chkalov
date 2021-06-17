@@ -32,7 +32,7 @@ li {
 body {
     @extend %Montserat-Redular;
     font-size: 18px;
-    line-height: 22px;
+    line-height: 27px;
 }
 
 .container {
@@ -47,9 +47,8 @@ body {
         font-size: 36px;
         line-height: 39px;
         text-transform: uppercase;
-        margin-top: 100px;
+        // margin-top: 100px;
     }
-
     &-text.narrow {
         max-width: 746px;
         margin-top: 40px;

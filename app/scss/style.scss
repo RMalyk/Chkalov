@@ -165,7 +165,7 @@
     //     text-transform: uppercase;
     // }
     &-text {
-        margin-top: 40px;
+        margin: 40px 0 40px 0;
         max-width: 906px;
     }
 }
@@ -263,19 +263,21 @@
 
 .page__section-title {
     color: #fff;
-    max-width: 667px;
-    margin-top: 60px;
+    max-width: 850px;
+    // margin-bottom: 60px;
 }
 
 .page__section-title.accent {
     color: #000;
-    margin-top: 100px;
+    // width: 850px;
+    // margin-top: 100px;
 }
 
 .benefits__list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: 60px;
 }
 
 .benefits__item {
@@ -297,6 +299,7 @@
     background-color: #ccd3d7;
     min-height: 1475px;
     position: relative;
+    padding-top: 100px;
 }
 
 .apartments {
@@ -356,7 +359,7 @@
     &-btn {
         border: 1px solid red;
         position: absolute;
-        bottom: 100px;
+        bottom: 75px;
         left: 0;
         right: 0;
         margin: 0 auto;
@@ -452,3 +455,34 @@
 
 // .noUi-origin{
 // }
+.section-advantages {
+    background-color: #002137;
+    color: #fff;
+    padding-top: 100px;
+    &-img {
+        max-width: 566px;
+    }
+    &-text {
+        display: block;
+    }
+}
+
+.section-advantages>.container>.page__section-title {
+    margin-bottom: 60px;
+}
+
+.advantages__item:nth-child(odd) .advantages__item-img {
+    float: left;
+    margin-right: 60px;
+}
+
+.advantages__item:nth-child(even) .advantages__item-img {
+    float: right;
+    margin-left: 60px;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
